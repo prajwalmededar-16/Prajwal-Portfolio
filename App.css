@@ -101,46 +101,40 @@ p {
 .home-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-
-.home-left {
-  flex: 1;
-  min-width: 280px;
-}
-
-.home-right {
-  flex: 1;
-  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
 }
 
-.heading {
-  font-size: 3rem;
-  font-weight: 700;
+.home-section .content {
+  max-width: 500px;
 }
 
-.heading span {
+.home-section h2 {
+  font-size: 1.5rem;
   color: #00c6ff;
 }
 
-.sub-heading {
-  font-size: 1.2rem;
-  margin: 20px 0;
+.home-section h1 {
+  font-size: 3rem;
+  margin: 10px 0;
 }
 
-.primary-btn {
-  padding: 12px 30px;
-  border-radius: 30px;
+.home-section .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
   background: #00c6ff;
   color: #fff;
+  border: none;
+  border-radius: 25px;
   text-decoration: none;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
-.primary-btn:hover {
+.home-section .btn:hover {
   background: transparent;
   border: 2px solid #00c6ff;
 }
@@ -148,9 +142,9 @@ p {
 .profile-img {
   width: 250px;
   height: 250px;
+  object-fit: cover;
   border-radius: 50%;
   border: 5px solid #00c6ff;
-  object-fit: cover;
   box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
 }
 
